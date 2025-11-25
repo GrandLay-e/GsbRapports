@@ -30,6 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,7 +40,9 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterToolStripMenuItem});
+            this.ajouterToolStripMenuItem,
+            this.modificationToolStripMenuItem,
+            this.visualisationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -48,8 +52,20 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(86, 29);
-            this.ajouterToolStripMenuItem.Text = "Ajouter";
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.ajouterToolStripMenuItem.Text = "Ajout";
+            // 
+            // modificationToolStripMenuItem
+            // 
+            this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.modificationToolStripMenuItem.Text = "Modification";
+            // 
+            // visualisationToolStripMenuItem
+            // 
+            this.visualisationToolStripMenuItem.Name = "visualisationToolStripMenuItem";
+            this.visualisationToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
+            this.visualisationToolStripMenuItem.Text = "Visualisation";
             // 
             // Menu
             // 
@@ -71,6 +87,8 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualisationToolStripMenuItem;
     }
 }
 
