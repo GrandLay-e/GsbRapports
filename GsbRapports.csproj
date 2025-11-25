@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +48,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="famille.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
+    <Compile Include="medecin.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
+    <Compile Include="medicament.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="offrir.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rapport.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rapports.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rapports.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="visiteur.cs">
+      <DependentUpon>Rapports.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +101,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,9 +111,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="Rapports.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Rapports.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Rapports.edmx.diagram">
+      <DependentUpon>Rapports.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Rapports.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Rapports.Context.cs</LastGenOutput>
+      <DependentUpon>Rapports.edmx</DependentUpon>
+    </Content>
+    <Content Include="Rapports.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Rapports.edmx</DependentUpon>
+      <LastGenOutput>Rapports.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
