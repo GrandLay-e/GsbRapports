@@ -37,6 +37,7 @@
             // 
             // menuStripRapports
             // 
+            this.menuStripRapports.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStripRapports.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStripRapports.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem,
@@ -44,8 +45,7 @@
             this.visualisationToolStripMenuItem});
             this.menuStripRapports.Location = new System.Drawing.Point(0, 0);
             this.menuStripRapports.Name = "menuStripRapports";
-            this.menuStripRapports.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStripRapports.Size = new System.Drawing.Size(857, 33);
+            this.menuStripRapports.Size = new System.Drawing.Size(844, 33);
             this.menuStripRapports.TabIndex = 0;
             this.menuStripRapports.Text = "menuStrip1";
             // 
@@ -75,7 +75,6 @@
             this.Controls.Add(this.menuStripRapports);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStripRapports;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
             this.Text = "Gestion des Rapports";
             this.menuStripRapports.ResumeLayout(false);
