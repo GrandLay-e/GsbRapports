@@ -52,24 +52,24 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.ajouterToolStripMenuItem.Text = "Ajout";
             // 
             // modificationToolStripMenuItem
             // 
             this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
-            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.modificationToolStripMenuItem.Text = "Modification";
             // 
             // visualisationToolStripMenuItem
             // 
             this.visualisationToolStripMenuItem.Name = "visualisationToolStripMenuItem";
-            this.visualisationToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
+            this.visualisationToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
             this.visualisationToolStripMenuItem.Text = "Visualisation";
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 500);
             this.Controls.Add(this.menuStripRapports);
