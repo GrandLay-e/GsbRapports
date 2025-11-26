@@ -28,56 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStripRapports = new System.Windows.Forms.MenuStrip();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menuStripRapports.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStripRapports
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripRapports.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStripRapports.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStripRapports.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem,
             this.modificationToolStripMenuItem,
             this.visualisationToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripRapports.Location = new System.Drawing.Point(0, 0);
+            this.menuStripRapports.Name = "menuStripRapports";
+            this.menuStripRapports.Size = new System.Drawing.Size(844, 33);
+            this.menuStripRapports.TabIndex = 0;
+            this.menuStripRapports.Text = "menuStrip1";
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.ajouterToolStripMenuItem.Text = "Ajout";
             // 
             // modificationToolStripMenuItem
             // 
             this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
-            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.modificationToolStripMenuItem.Text = "Modification";
             // 
             // visualisationToolStripMenuItem
             // 
             this.visualisationToolStripMenuItem.Name = "visualisationToolStripMenuItem";
-            this.visualisationToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
+            this.visualisationToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
             this.visualisationToolStripMenuItem.Text = "Visualisation";
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(850, 500);
+            this.Controls.Add(this.menuStripRapports);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStripRapports;
             this.Name = "Menu";
             this.Text = "Gestion des Rapports";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStripRapports.ResumeLayout(false);
+            this.menuStripRapports.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,7 +86,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripRapports;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualisationToolStripMenuItem;
